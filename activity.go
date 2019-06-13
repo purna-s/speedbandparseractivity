@@ -31,7 +31,7 @@ func (a *XMLParserActivity) Metadata() *activity.Metadata {
 type TrafficInfo struct {
 	XMLName            xml.Name         `xml:"TrafficInfo" json:"-"`
 	SpeedBandInfoList  []SpeedBandInfo  `xml:"SpeedBandInfo" json:"SpeedBandInfo"`
-	TDataList          []TData          `xml:"TData" json:"TData"
+	TDataList          []TData          `xml:"TData" json:"TData"`
 }
 
 type SpeedBandInfoList struct {
@@ -43,7 +43,6 @@ type SpeedBandInfoList struct {
 
 type TDataList struct {
 	XMLName     xml.Name `xml:"TData" json:"-"`
-	Band        string   `xml:"Band" json:"Band"`
 	LinkID      string   `xml:"LinkID" json:"LinkID"`
 	SpeedBand   string   `xml:"SpeedBand" json:"SpeedBand"`
 }
@@ -79,8 +78,8 @@ func (a *XMLParserActivity) Eval(ctx activity.Context) (done bool, err error) {
 	//fmt.Println(string(jsondata))
 
 	// Set the output as part of the context
-	activityLog.Debugf("Activity has parsed XML Successfully")
-	fmt.Println("Activity has parsed XML Successfully")
+	activityLog.Debugf("Activity has parsed SpeedBand XML Successfully")
+	fmt.Println("Activity has parsed SpeedBand XML Successfully")
 
 	ctx.SetOutput("output", string(jsondata))
 
