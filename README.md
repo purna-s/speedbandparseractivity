@@ -3,7 +3,7 @@ title: speedbandparseractivity
 ---
 
 # speedbandparseractivity
-This activity allows Parse XML using speedband schema in XMLParserActivity code
+This activity allows to parse SpeedBand XML using defined SpeedBand schema
 
 ## Installation
 ### Flogo CLI
