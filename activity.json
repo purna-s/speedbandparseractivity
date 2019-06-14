@@ -1,0 +1,24 @@
+{
+  "name": "speedbandparseractivity",
+  "version": "0.0.1",
+  "type": "flogo:activity",
+  "ref": "github.com/purna-s/speedbandparseractivity",  
+  "title": "SpeedBandParser",
+  "description": "Parse SpeedBand XML into a Flogo Array",
+  "author": "purna-s <purna.sadanala@prowesssoft.com>",
+
+  "inputs":[
+    
+    {
+      "name": "xmlString",
+      "type": "string",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "name": "output",
+      "type": "string"
+    }
+  ]
+}
