@@ -30,8 +30,8 @@ func (a *XMLParserActivity) Metadata() *activity.Metadata {
 //XSD
 type TrafficInfo struct {
 	XMLName            xml.Name         `xml:"TrafficInfo" json:"-"`
-	SpeedBandInfoList  []SpeedBandInfo  `xml:"SpeedBandInfo" json:"SpeedBandInfo"`
-	TDataList          []TData          `xml:"TData" json:"TData"`
+	SpeedBandInfoList []SpeedBandInfo  `xml:"SpeedBandInfo" json:"SpeedBandInfo"`
+	TDataList         []TData          `xml:"TData" json:"TData"`
 }
 
 type SpeedBandInfoList struct {
