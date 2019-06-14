@@ -59,7 +59,6 @@ type TrafficInfo struct {
 			LinkID    string `json:"LinkID"`
 			SpeedBand string `json:"SpeedBand"`
 		} `json:"TData"`
-
 }
 
 // end of XSD
